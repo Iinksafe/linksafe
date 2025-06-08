@@ -8,21 +8,20 @@
     :root {
       --primary-color: #5865f2;
       --accent-color: #4e5d94;
-      --bg-color: #f9f9f9;
-      --text-color: #222;
+      --text-color: #fff;
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
       margin: 0;
       padding: 0 1rem;
       line-height: 1.6;
+      background: linear-gradient(135deg, #5865f2, #b26ff2);
+      color: var(--text-color);
     }
 
     header {
-      background-color: var(--primary-color);
+      background: rgba(0, 0, 0, 0.2);
       color: white;
       padding: 2rem 1rem;
       text-align: center;
@@ -41,10 +40,11 @@
     main {
       max-width: 800px;
       margin: 2rem auto;
-      background: white;
+      background: rgba(255, 255, 255, 0.1);
       padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
 
     section {
@@ -52,8 +52,8 @@
     }
 
     section h2 {
-      color: var(--accent-color);
-      border-bottom: 2px solid #ddd;
+      color: #ffffff;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
       padding-bottom: 0.3rem;
       margin-bottom: 1rem;
       font-size: 1.4rem;
@@ -64,12 +64,12 @@
     }
 
     a {
-      color: var(--primary-color);
-      text-decoration: none;
+      color: #d6e0ff;
+      text-decoration: underline;
     }
 
     a:hover {
-      text-decoration: underline;
+      color: #ffffff;
     }
 
     strong {
