@@ -19,9 +19,23 @@
       <b><p id="name"></p></b>
       <hr>
 
+      <p>Are you sure?</p>
+      <b><p id="bool"></p></b>
+      <hr>
+
+      <p>I do not believe you.</p>
+      <b><p id="whatever"></p></b>
+      <hr>
+
     <script>
       let name = prompt('What is your name?');
-      document.getElementById('name').textContent = name;
+      document.getElementById('name').textContent = `[${name}]`;
+
+      let bool = confirm('Are you sure?');
+      document.getElementById('bool').textContent = `[${bool ? 'Yes' : 'No'}]`;
+
+      let whatever = confirm('I do not believe you.');
+      document.getElementById('bool').textContent = `[${whatever}]`;
     </script>
   </body>
 </html>
