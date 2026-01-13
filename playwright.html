@@ -15,24 +15,13 @@
     <fieldset>
       <legend>Bot Application</legend>
 
-      <field>
-        Are you a robot?
-        <option value="Yes"></option>
-        <option value="No"></option>
-        <p id="robot"></p>
-      </field>
-
-      <field>
-        Are you lying?
-        <option value="No"></option>
-        <option value="Yes"></option>
-        <p id="lying"></p>
-      </field>
-    </fieldset>
+      <p>You said your name was:</p>
+      <b><p id="name"></p></b>
+      <hr>
 
     <script>
       let name = prompt('What is your name?');
-      document.getElementsById('robot')[1].innerHTML = name;
+      document.getElementsById('name')[1].innerHTML = name;
     </script>
   </body>
 </html>
