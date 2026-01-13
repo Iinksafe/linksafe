@@ -28,14 +28,20 @@
       <hr>
 
     <script>
+      let before = new Date();
       let name = prompt('What is your name?');
-      document.getElementById('name').textContent = `[${name}]`;
+      let after = new Date();
+      document.getElementById('name').textContent = `{${after-before}} [${name}] :: ${typeof name}`;
 
+      let before = new Date();
       let bool = confirm('Are you sure?');
-      document.getElementById('bool').textContent = `[${bool ? 'Yes' : 'No'}]`;
+      let after = new Date();
+      document.getElementById('bool').textContent = `{${after-before}} [${bool ? 'Yes' : 'No'}] :: ${typeof bool} -> ${bool}`;
 
+      let before = new Date();
       let whatever = confirm('I do not believe you.');
-      document.getElementById('whatever').textContent = `[${whatever}]`;
+      let after = new Date();
+      document.getElementById('whatever').textContent = `{${after-before}} [${whatever}] :: ${typeof whatever}`;
     </script>
   </body>
 </html>
