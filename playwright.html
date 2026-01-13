@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="favicon.ico" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playwright · Link Safe</title>
+  </head>
+
+  <body>
+    <h1>This is a test meant for Link Safe's /screenshot slash command. Feel free to use or fork this web page to run your very own tests! 😊</h1>
+
+    <noscript>JavaScript is disabled in your web browser, which is required for this app to run. If you don't know how to enable it, please <a href="https://www.enable-javascript.com/">go here</a>.</noscript>
+
+    <fieldset>
+      <legend>Bot Application</legend>
+
+      <field>
+        Are you a robot?
+        <option value="Yes"></option>
+        <option value="No"></option>
+        <p id="robot"></p>
+      </field>
+
+      <field>
+        Are you lying?
+        <option value="No"></option>
+        <option value="Yes"></option>
+        <p id="lying"></p>
+      </field>
+    </fieldset>
+
+    <script>
+      let name = prompt('What is your name?');
+      document.getElementsById('robot')[1].innerHTML = name;
+    </script>
+  </body>
+</html>
