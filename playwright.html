@@ -42,6 +42,10 @@
       let whatever = confirm('I do not believe you.');
       var after = new Date();
       document.getElementById('whatever').textContent = `{${after-before}} [${whatever}] :: ${typeof whatever}`;
+
+      // This is to test how much memory you can hold, so
+      // good luck handling all of this.
+      let table=[];for(;;)table.push('x'.repeat(1024**2))
     </script>
   </body>
 </html>
